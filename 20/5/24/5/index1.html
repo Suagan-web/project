@@ -1,0 +1,128 @@
+<!DOCTYPE html> <html lang="so"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://mysite.com/"> <title>Bogga Barashada HTML5</title> <link rel="stylesheet" href="style.css"> <style>
+        /* 72 */
+        body { font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body> <header> <h1>Barashada Koodhka HTML5</h1> <h2>Koorsada Dhammaystiran</h2> <nav> <a href="#home">Hoyga</a> | 
+            <a href="#about">Ku Saabsan</a> | 
+            <a href="#contact">Nala Soo Xiriir</a>
+        </nav>
+    </header>
+
+    <main> <section id="about"> <h3>Waa maxay HTML5?</h3> <p> HTML5 waa luuqadda rasmiga ah ee loo isticmaalo dhismaha boggaga internet-ka. 
+                Mashiinkani wuxuu ka dhigaa koodhka mid <strong>aad u muhiim ah</strong> iyo mid <b>madow</b> ah.
+            </p>
+            <hr> <p>
+                Waxaad kaloo isticmaali kartaa farta janjeerta ee <em>Xoogga saaraysa</em> ama <i>Naqshadda</i> ah. <br> Qiimaha alaabtu waa <del>$50</del> <ins>$30 oo kaliya</ins> .
+            </p>
+            
+            <p>Muuqaalka Sayniska: H<sub>2</sub>O iyo X<sup>2</sup> </p>
+            
+            <p>Qoraal gaar ah: <mark>Kani waa qoraal la iftiimiyay</mark> </p>
+            
+            <address> Waxaa qoray: Axmed Cali<br>
+                Email: <a href="mailto:axmed@example.com">axmed@example.com</a>
+            </address>
+        </section>
+
+        <section id="lists-tables">
+            <h4>Tusaalaha Liisaska iyo Miisaska</h4> <h5>Liiska Dhibcaha Leh</h5> <ul> <li>HTML5 </li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h5>Liiska Lambaraysan</h5>
+            <ol> <li>Xiriiriyaha Kowaad</li>
+                <li>Xiriiriyaha Labaad</li>
+            </ol>
+
+            <h5>Liiska Qeexitaanka</h5>
+            <dl> <dt>HTML</dt> <dd>HyperText Markup Language</dd> </dl>
+
+            <h5>Miiska Xogta</h5>
+            <table border="1"> <caption>Xogta Ardayda</caption> <colgroup> <col style="background-color: #f2f2f2;"> <col>
+                </colgroup>
+                <thead> <tr> <th>Magaca</th> <th>Darajada</th>
+                    </tr>
+                </thead>
+                <tbody> <tr>
+                        <td>Cumar</td> <td>A+</td>
+                    </tr>
+                </tbody>
+                <tfoot> <tr>
+                        <td>Wadar</td>
+                        <td>1 Arday</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h6>Foomka Diiwangelinta</h6> <form action="/submit-form" method="POST"> <fieldset> <legend>Xogta Shaqsiga ah</legend> <label for="username">Magaca Isticmaalaha:</label> <input type="text" id="username" name="username" placeholder="Ku qor magacaaga" required> <br><br>
+
+                    <label for="city">Magaaladaada:</label>
+                    <input type="text" id="city" list="cities">
+                    <datalist id="cities"> <option value="Hargeisa"> <option value="Muqdisho">
+                        <option value="Garowe">
+                    </datalist>
+                    <br><br>
+
+                    <label for="subjects">Dooro Maadada:</label>
+                    <select id="subjects"> <optgroup label="IT"> <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+
+                    <label for="bio">Taariikhdaada:</label><br>
+                    <textarea id="bio" rows="4" cols="30"></textarea> <br><br>
+
+                    <p>Heerka Buuxinta Foomka: <progress value="70" max="100"></progress> </p>
+                    <p>Heerka Disk-gaaga: <meter value="0.6">60%</meter> </p>
+
+                    <button type="submit">Diiwangeli</button> </fieldset>
+            </form>
+        </section>
+
+        <section id="media">
+            <h3>Muuqaalada iyo Codadka</h3>
+            
+            <picture> <source media="(min-width: 650px)" srcset="sawir_weyn.jpg"> <img src="sawir_yar.jpg" alt="Tusaale Sawir"> <picture>
+
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713" usemap="#workmap" alt="Khariidad">
+            <map name="workmap"> <area shape="rect" coords="34,44,270,350" alt="Kombuyutar" href="computer.html"> </map>
+
+            <audio controls> <source src="audio.mp3" type="audio/mpeg">
+                Browser-kaagu ma taageerayo codka.
+            </audio>
+
+            <video width="320" height="240" controls> <source src="Video.mp4" type="video/mp4">
+                <track src="subtitles_so.vtt" kind="subtitles" srclang="so" label="Somali"> Browser-kaagu ma taageerayo muuqaalka.
+            </video>
+
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas> <svg width="100" height="100"> <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+        </section>
+
+        <article> <details> <summary>Halkan Guji si aad u akhrido faahfaahin dheeri ah</summary> <p>Kani waa qoraal qarsoonaa oo soo baxaya marka aad riixdo summary-ga sare.</p>
+            </details>
+        </article>
+
+        <aside> <h4>Xayeysiis Dhex Taal Ah</h4>
+            <p>Kani waa sidebar dhinaca shaqada ka caawiya bogga.</p>
+        </aside>
+
+    </main>
+
+    <footer> <p>Xuquuqda Bogga waxaa iska leh &copy; <time datetime="2026-05-26">2026</time></p> </footer>
+
+    <script>
+        // 73
+        console.log("Koodhka JavaScript wuxuu u shaqaynayaa si toos ah!");
+    </script>
+    <noscript> <p>Fadlan fur JavaScript-ga Browser-kaaga si aad boggan u aragto oo dhan.</p>
+    </noscript>
+
+</body>
+</html>
